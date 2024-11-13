@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'cloudinary',  # Add cloudinary to the installed apps
-    'cloudinary_storage'
+    'cloudinary_storage',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -38,6 +39,8 @@ MIDDLEWARE = [
     # white noise config
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
+	# cors middleware
+	'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -63,6 +66,7 @@ TEMPLATES = [
     },
 ]
 
+CORS_ALLOW_ALL_ORIGINS: True
 WSGI_APPLICATION = 'shoplist.wsgi.application'
 
 

@@ -5,3 +5,5 @@ django-filter
 djangorestframework
 python-decouple
 whitenoise
+gunicorn
+django-cors-headers
