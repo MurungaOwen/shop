@@ -83,6 +83,7 @@ if not DEBUG:
             default=config('DATABASE_URL')
         )
     }
+    print("db_url is ", config('DATABASE_URL'))
 else:
     DATABASES = {
         'default': {
