@@ -7,3 +7,5 @@ python-decouple
 whitenoise
 gunicorn
 django-cors-headers
+dj_database_url
+psycopg2
