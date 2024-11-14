@@ -6,4 +6,4 @@ class ProductSerializer(ModelSerializer):
     """serialize product to valid json"""
     class Meta:
         model = Product
-        fields = ["name", "category", "price", "image"]
+        fields = "__all__"
