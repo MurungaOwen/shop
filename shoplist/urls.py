@@ -7,5 +7,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', admin.site.urls),
-    path('api/v1/products', views.ProductListing.as_view()),
+    path('/api/v1/products', views.ProductListing.as_view()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
