@@ -70,6 +70,7 @@ TEMPLATES = [
 CORS_ALLOWED_ORIGINS = [
 	"http://localhost:5500",
 	"http://127.0.0.1:5500",
+	"https://myshop-a26.netlify.app",
 ]
 WSGI_APPLICATION = 'shoplist.wsgi.application'
 
